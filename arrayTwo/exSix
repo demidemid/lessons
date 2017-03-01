@@ -1,0 +1,27 @@
+<html>
+
+<body>
+  <script>
+    'use strict';
+    var vasya = { name: "Вася", age: 23 };
+    var masha = { name: "Маша", age: 18 };
+    var vovochka = { name: "Вовочка", age: 6 };
+
+    var people = [ vasya , masha , vovochka ];
+
+    function compareNumeric(a, b) {
+      return a.age - b.age; //указываем при сортировке массива конкретный элимент объекта .age
+    };
+
+    people.sort(compareNumeric);
+
+    // теперь people: [vovochka, masha, vasya]
+
+    for (var i = 0; i < people.length; i++) {
+      alert(people[i].age);
+    };
+
+  </script>
+</body>
+
+</html>

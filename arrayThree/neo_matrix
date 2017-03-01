@@ -1,0 +1,24 @@
+<html>
+<body>
+<script>
+  'use strict'
+
+  var neo = new Array(10);
+
+  for (var i = 0; i < neo.length; i++) {
+    neo[i] = new Array(10);
+  }
+
+  for (var row = 0; row < neo.length; row++) {
+    for (var col = 0; col < neo.length; col++) {
+      neo[row][col] = row * col;
+    }
+  }
+
+  alert(neo[6][9]);
+  alert(neo[2][5]);
+  alert(neo[3][3]);
+
+</script>
+</body>
+</html>

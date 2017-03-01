@@ -1,0 +1,41 @@
+<html>
+
+<body>
+  <script>
+    'use strict';
+    function compareNumeric(a, b) {
+      return b - a;
+    }
+
+    var arr = [5, 2, 1, -10, 8];
+
+    // alert( arr.sort(compareNumeric) );  // 1, 2, 15
+
+    //////////////////////////////////////////////////////////////////////
+
+    var arr1 = ["HTML", "JavaScript", "CSS"];
+
+    var arr1Sorted = arr1.slice().sort();
+
+    // alert( arr1Sorted ); // CSS, HTML, JavaScript
+    // alert( arr1 ); // HTML, JavaScript, CSS (без изменений)
+
+    //////////////////////////////////////////////////////////////////////
+    function random() {
+
+    return Math.random() - 0.5;
+
+    }
+
+    var arr = [1, 2, 3, 4, 5];
+
+    arr.sort(random);
+
+    alert( arr ); // элементы в случайном порядке, например [3,5,1,2,4]
+
+    //////////////////////////////////////////////////////////////////////////
+
+  </script>
+</body>
+
+</html>

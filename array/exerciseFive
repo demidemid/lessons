@@ -1,0 +1,26 @@
+<html>
+<body>
+  <script>
+   'use stric'
+
+   var numbers = [];
+
+   while (true) {
+     var value = prompt('введите число', 0);
+// проверям, что значение не равно строке, пустому значению
+     if (value === '' || value === null || isNaN(value) ) break;
+
+     numbers.push(+value);
+   }
+
+   var sum = 0;
+
+   for (var i = 0; i < numbers.length; i++) {
+     sum += numbers[i];
+   }
+
+   alert( sum );
+
+  </script>
+</body
+</html>

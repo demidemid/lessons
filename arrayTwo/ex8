@@ -1,0 +1,25 @@
+<html>
+
+<body>
+  <script>
+    'use strict';
+    var arr = [1, 2, 3, 4, 5]
+
+    // для каждого элемента массива запустить функцию,
+    // промежуточный результат передавать первым аргументом далее
+    function getSum(arr) {
+      var result = [];
+
+      arr.reduce(function(sum, current) {
+        result.push(sum);
+        return sum + current;
+        }
+      );
+      return result;
+    }
+
+    alert( getSum(arr)); // 15
+  </script>
+</body>
+
+</html>
